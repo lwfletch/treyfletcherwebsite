@@ -1,15 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import profile from '../profile.jpg';
 import Container from '@material-ui/core/Container'
 
 function Home() {
-	const [state, setState] = useState()
-	useEffect(() => {
-		fetch("https://3kldjvur5i.execute-api.us-east-1.amazonaws.com/v1/").then(
-			res => setState(res.data)
-		)
-	})
-
   return (
     <Container maxWidth="sm">
         <header className="Home-header">
